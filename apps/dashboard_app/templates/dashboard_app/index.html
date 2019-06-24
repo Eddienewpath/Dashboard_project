@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Welcome | Home</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    {% load static %}
+    <link rel="icon" type="image/png" href='{% static "dashboard_app/img/icons/favicon.ico" %}' />
+    <!-- <link rel="manifest" href="/manifest.json"> -->
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!-- favicons -->
+    <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href='{% static "dashboard_app/css/style.css" %}'>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href='{% static "dashboard_app/css/custom-responsive-style.css" %}'>
+    <link href="//fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    {% load static %}
+    <script type="text/javascript" src='{% static "dashboard_app/js/jquery-3.2.1.min.js" %}'></script>
+    {% load static %}
+    <script type="text/javascript" src='{% static "dashboard_app/js/all-plugins.js" %}'></script>
+    {% load static %}
+    <script type="text/javascript" src='{% static "dashboard_app/js/plugin-active.js" %}'></script>
+</head>
+<body data-spy="scroll" data-target=".main-navigation" data-offset="150">
+    <section id="MainContainer">
+        <!-- Header starts here -->
+        <header id="Header">
+            <nav class="main-navigation">
+                <div class="container clearfix">
+                    <div class="site-logo-wrap">
+                        <a class="logo" href="/">Dashboard</a>
+                    </div>
+                    <a href="javascript:void(0)" class="menu-trigger hidden-lg-up"><span>&nbsp;</span></a>
+                    <div class="main-menu hidden-md-down">
+                        <ul class="menu-list">
+                            <li><a class="nav-link" href="javascript:void(0)" data-target="#HeroBanner">Home</a></li>               
+                            <li><a class="nav-link" href="javascript:void(0)" data-target="#About">About</a></li>
+                            <li><a class="nav-link" href="/login" data-target="#ContactUs">Login</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="mobile-menu hidden-lg-up">
+                    <ul class="mobile-menu-list">
+                        <li><a class="nav-link" href="javascript:void(0)" data-target="#HeroBanner">Home</a></li>
+                        <li><a class="nav-link" href="javascript:void(0)" data-target="#About">About</a></li>
+                        <li><a class="nav-link" href="/login" data-target="#ContactUs">Login</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!-- Header ends here -->
+        <!-- Banner starts here -->
+        <section id="HeroBanner">
+            <div class="hero-content">
+                <h1>Welcome to my site</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis fugit, repellat porro cupiditate minima unde?</p>
+                <a href="/login" class="hero-cta">Get Started</a>
+            </div>
+        </section>
+        <!-- Banner ends here -->
+        <!-- Services section starts here -->
+        <section id="Services">
+            <div class="container">
+                <div class="block-heading">
+                    <h2>Functionalities</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+                <div class="services-wrapper">
+                    <div class="each-service">
+                        <div class="service-icon"><i class="fa fa-desktop" aria-hidden="true"></i></div>
+                        <h5 class="service-title">LOREM IPSUM</h5>
+                        <p class="service-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
+                    </div>
+                    <div class="each-service">
+                        <div class="service-icon"><i class="fa fa-line-chart" aria-hidden="true"></i></div>
+                        <h5 class="service-title">LOREM IPSUM</h5>
+                        <p class="service-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
+                    </div>
+                    <div class="each-service">
+                        <div class="service-icon"><i class="fa fa-paper-plane" aria-hidden="true"></i></div>
+                        <h5 class="service-title">LOREM IPSUM</h5>
+                        <p class="service-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Services section ends here -->
+        <!-- About Us section starts here -->
+        <section id="About">
+            <div class="container">
+                <div class="about-wrapper">
+                    <h2>About me</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Footer section starts here -->
+        <footer id="Footer">
+            <div class="container">
+                <div class="social-share">
+                    <ul>
+                        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                    </ul>
+                </div>
+                <div class="footer-logo-wrap">
+                     Designed by <a href="#">XXXX</a>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer section ends here -->
+    </section>
+</body>
+
+</html>
