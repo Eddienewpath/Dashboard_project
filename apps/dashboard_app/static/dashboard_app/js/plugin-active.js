@@ -37,10 +37,10 @@ $(document).ready(function() {
   // sript for fixed header on scroll
   $(window).scroll(function() {
       var scroll = $(window).scrollTop();
-      if (scroll >= 60) {
-          $("#Header").addClass("header-fixed");
-      } else {
-          $("#Header").removeClass("header-fixed");
-      }
+    //   if (scroll >= 60) {
+    //       $("#Header").addClass("header-fixed");
+    //   } else {
+    //       $("#Header").removeClass("header-fixed");
+    //   }
   });
 });

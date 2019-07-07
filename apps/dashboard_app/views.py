@@ -44,16 +44,15 @@ def login_user(request):
         return redirect('/signin')
 
 
-
 def signup(request):
     return render(request, 'dashboard_app/signup.html')
 
 
-def success(request):
-    context = {
-        'user': User.objects.get(id=request.session['user_id'])
-    }
-    return render(request, 'dashboard_app/dashboard.html', context)
+# def success(request):
+#     context = {
+#         'user': User.objects.get(id=request.session['user_id'])
+#     }
+#     return render(request, 'dashboard_app/dashboard.html', context)
     
 
 def register_user(request):
@@ -93,16 +92,19 @@ def register_user(request):
         return redirect('/signup')
 
 
-
 def addUser(request):
     return render(request, 'dashboard_app/add_user.html')
 
 
 def success(request):
     if 'login' in request.session and request.session['login']:
+        all_msg = Message.objects.all()
+        msgs = []
+        for m in reversed(all_msg): 
+            msgs.append(m)
         context = {
             'user': User.objects.get(id=request.session['user_id']),
-            'all_messages': Message.objects.all()
+            'all_messages': msgs
         }
         return render(request, 'dashboard_app/dashboard.html', context)
     messages.error(request, 'login first')
